@@ -1,7 +1,13 @@
+import Hero from "./components/Hero";
+import WorkAndEducation from "./components/WorkAndEducation";
+
 function App() {
   return (
     <>
-      <h1 className="text-2xl font-bold tracking-wider text-red-400">Test</h1>
+      <main className="font-inter mx-auto w-8/10 max-w-3xl text-gray-800">
+        <Hero />
+        <WorkAndEducation />
+      </main>
     </>
   );
 }
