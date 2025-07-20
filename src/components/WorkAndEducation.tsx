@@ -9,7 +9,7 @@ function WorkAndEducation() {
       <img
         src={work.imagePath}
         alt={`${work.name} logo`}
-        className="absolute top-6 -left-6 aspect-square w-12 rounded-full bg-white object-center ring-1 ring-gray-300"
+        className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-center ring-1 ring-gray-300"
       />
 
       <p className="mb-2 text-xs font-medium tracking-wide text-gray-500 uppercase">
@@ -37,7 +37,7 @@ function WorkAndEducation() {
       <img
         src={edu.imagePath}
         alt={`${edu.name} logo`}
-        className="absolute top-6 -left-6 aspect-square w-12 rounded-full bg-white object-center ring-1 ring-gray-300"
+        className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-center ring-1 ring-gray-300"
       />
 
       <p className="mb-2 text-xs font-medium tracking-wide text-gray-500 uppercase">
@@ -63,9 +63,9 @@ function WorkAndEducation() {
   ));
 
   return (
-    <section className="mb-20">
+    <section className="my-12">
       {/* Tab Navigation */}
-      <div className="flex items-center justify-between rounded-xl bg-gray-100 p-1">
+      <div className="flex items-center justify-between rounded-xl bg-gray-100 p-1 transition-all duration-200">
         <button
           className={`w-full cursor-pointer rounded-lg p-1 px-4 text-sm font-semibold ${isWork ? "bg-white text-black shadow-sm" : "text-gray-500"} cursor-pointer`}
           onClick={() => setIsWork(true)}
@@ -81,7 +81,7 @@ function WorkAndEducation() {
       </div>
 
       {/* Content Container */}
-      <div className="mt-2 flex items-stretch rounded-2xl shadow-md ring-1 ring-gray-200">
+      <div className="mt-3 flex items-stretch rounded-2xl shadow-md ring-1 ring-gray-200">
         <div className="w-12 border-r-1 border-gray-300" />
         <div className="w-full">{isWork ? workElems : educationElems}</div>
       </div>

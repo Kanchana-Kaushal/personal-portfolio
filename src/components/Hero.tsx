@@ -37,7 +37,7 @@ function Hero() {
           </p>
 
           <div className="my-8 flex items-center gap-6">
-            <button className="flex cursor-pointer items-center gap-3 rounded-md p-2 px-3 text-sm font-semibold text-gray-900 shadow-2xl ring-1 ring-gray-300 transition hover:bg-gray-100">
+            <button className="flex cursor-pointer items-center gap-3 rounded-md p-2 px-3 text-sm font-semibold text-gray-900 shadow-md ring-1 ring-gray-300 transition hover:bg-gray-100">
               Resume <IoMdCloudDownload className="text-lg text-gray-700" />
             </button>
 
