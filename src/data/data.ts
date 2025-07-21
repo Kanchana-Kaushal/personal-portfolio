@@ -132,10 +132,6 @@ export const projectData: Project[] = [
         label: "Source",
         url: "#",
       },
-      {
-        label: "Source (UI)",
-        url: "#",
-      },
     ],
   },
 ];

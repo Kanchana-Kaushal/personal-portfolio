@@ -7,7 +7,7 @@ import { MdOutlineMailOutline } from "react-icons/md";
 function Hero() {
   return (
     <>
-      <section className="my-12 flex-row-reverse items-center gap-8 md:flex">
+      <section className="my-14 flex-row-reverse items-center gap-8 md:flex">
         <div>
           <img
             src="/profile-image.JPG"
@@ -37,20 +37,22 @@ function Hero() {
           </p>
 
           <div className="my-8 flex items-center gap-6">
-            <button className="flex cursor-pointer items-center gap-3 rounded-md p-2 px-3 text-sm font-semibold text-gray-900 shadow-md ring-1 ring-gray-300 transition hover:bg-gray-100">
-              Resume <IoMdCloudDownload className="text-lg text-gray-700" />
-            </button>
-
-            <a href="#">
-              <FaGithub className="text-xl text-gray-700" />
+            <a href="/sample_resume.pdf" download={"kanchanak-resume.pdf"}>
+              <button className="flex cursor-pointer items-center gap-3 rounded-md p-2 px-3 text-sm font-semibold text-gray-900 shadow-md ring-1 ring-gray-300 transition hover:bg-gray-100">
+                Resume <IoMdCloudDownload className="text-lg text-gray-700" />
+              </button>
             </a>
 
             <a href="#">
-              <SiLinkedin className="text-lg text-gray-700" />
+              <FaGithub className="text-xl text-gray-500 transition hover:text-gray-950" />
             </a>
 
             <a href="#">
-              <MdOutlineMailOutline className="text-2xl text-gray-700" />
+              <SiLinkedin className="text-lg text-gray-500 transition hover:text-gray-950" />
+            </a>
+
+            <a href="#">
+              <MdOutlineMailOutline className="text-2xl text-gray-500 transition hover:text-gray-950" />
             </a>
           </div>
         </div>

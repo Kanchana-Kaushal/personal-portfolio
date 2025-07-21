@@ -1,11 +1,11 @@
-import { FaArrowRightLong } from "react-icons/fa6";
+import { FaArrowLeftLong } from "react-icons/fa6";
 import { CiGlobe } from "react-icons/ci";
 import { FiGithub } from "react-icons/fi";
 import { projectData } from "../data/data.js";
 import { Link } from "react-router-dom";
 
-function RecentProjects() {
-  const recentProjects = projectData.slice(0, 2).map((project) => (
+function Projects() {
+  const myProjects = projectData.map((project) => (
     <div className="space-y-2 rounded-xl p-4 shadow-sm ring-1 ring-gray-300 md:p-6">
       <img src={project.image} alt="" />
       <h3 className="font-bold">{project.title}</h3>
@@ -25,7 +25,7 @@ function RecentProjects() {
               <>
                 <a
                   href={link.url}
-                  className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs text-gray-50"
+                  className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs text-gray-50 transition hover:opacity-80"
                 >
                   <FiGithub />
                   {link.label}
@@ -38,7 +38,7 @@ function RecentProjects() {
             <>
               <a
                 href={link.url}
-                className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs text-gray-50"
+                className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs text-gray-50 transition hover:opacity-80"
               >
                 <CiGlobe /> {link.label}
               </a>
@@ -48,26 +48,27 @@ function RecentProjects() {
       </div>
     </div>
   ));
+
   return (
     <>
       <section className="my-14">
-        <div className="flex items-center justify-between">
-          <h2 className="text-2xl font-bold">Recent Projects</h2>
+        <div className="flex flex-row-reverse items-center justify-between">
+          <h2 className="text-2xl font-bold">My Projects</h2>
 
-          <Link to={"/projects"}>
+          <Link to={"/"}>
             <p className="group flex cursor-pointer items-center gap-2">
-              See All
-              <FaArrowRightLong className="transition-all duration-200 group-hover:translate-x-1.5" />
+              <FaArrowLeftLong className="transition-all duration-200 group-hover:-translate-x-1.5" />
+              Go Back
             </p>
           </Link>
         </div>
 
         <div className="grid-cols-2 gap-8 space-y-8 py-8 md:grid md:space-y-0">
-          {recentProjects}
+          {myProjects}
         </div>
       </section>
     </>
   );
 }
 
-export default RecentProjects;
+export default Projects;

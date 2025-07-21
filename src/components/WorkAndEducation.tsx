@@ -63,7 +63,7 @@ function WorkAndEducation() {
   ));
 
   return (
-    <section className="my-12">
+    <section className="my-14">
       {/* Tab Navigation */}
       <div className="flex items-center justify-between rounded-xl bg-gray-100 p-1 transition-all duration-200">
         <button

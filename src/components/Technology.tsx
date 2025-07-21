@@ -42,7 +42,7 @@ function Technologies() {
   ];
 
   return (
-    <section className="my-16">
+    <section className="my-14">
       <h2 className="mb-6 text-2xl font-bold">Technologies</h2>
 
       {/* Desktop View - Cards */}

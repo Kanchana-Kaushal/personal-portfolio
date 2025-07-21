@@ -1,18 +1,19 @@
-import Hero from "./components/Hero";
-import RecentProjects from "./components/RecentProjects";
-import Technologies from "./components/Technology";
-import WorkAndEducation from "./components/WorkAndEducation";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Footer from "./components/Footer";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
 
 function App() {
   return (
-    <>
+    <BrowserRouter>
       <main className="font-inter mx-auto w-4/5 max-w-3xl text-gray-800">
-        <Hero />
-        <WorkAndEducation />
-        <RecentProjects />
-        <Technologies />
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="projects" element={<Projects />} />
+        </Routes>
+        <Footer />
       </main>
-    </>
+    </BrowserRouter>
   );
 }
 
