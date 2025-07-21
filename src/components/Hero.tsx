@@ -3,6 +3,7 @@ import { IoMdCloudDownload } from "react-icons/io";
 import { FaGithub } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import { MdOutlineMailOutline } from "react-icons/md";
+import toast from "react-hot-toast";
 
 function Hero() {
   return (
@@ -37,22 +38,31 @@ function Hero() {
           </p>
 
           <div className="my-8 flex items-center gap-6">
-            <a href="/sample_resume.pdf" download={"kanchanak-resume.pdf"}>
+            <a
+              href="/sample_resume.pdf"
+              download={"kanchanak-resume.pdf"}
+              onClick={() => {
+                toast.success("Download Started!");
+              }}
+            >
               <button className="flex cursor-pointer items-center gap-3 rounded-md p-2 px-3 text-sm font-semibold text-gray-900 shadow-md ring-1 ring-gray-300 transition hover:bg-gray-100 dark:text-gray-100 dark:ring-gray-700 dark:hover:bg-gray-900">
                 Resume{" "}
                 <IoMdCloudDownload className="text-lg text-gray-700 dark:text-gray-100" />
               </button>
             </a>
 
-            <a href="#">
+            <a href="https://github.com/Kanchana-Kaushal" target="_blank">
               <FaGithub className="text-xl text-gray-500 transition hover:text-gray-950 dark:text-gray-400 dark:hover:text-gray-100" />
             </a>
 
-            <a href="#">
+            <a
+              href="https://www.linkedin.com/in/kanchana-kaushal-9745542b3/"
+              target="_blank"
+            >
               <SiLinkedin className="text-lg text-gray-500 transition hover:text-gray-950 dark:text-gray-400 dark:hover:text-gray-100" />
             </a>
 
-            <a href="#">
+            <a href="mailto:kanchanak.bandara@gmail.com?subject=Hello&body=Hi Kanchana, I wanted to connect with you.">
               <MdOutlineMailOutline className="text-2xl text-gray-500 transition hover:text-gray-950 dark:text-gray-400 dark:hover:text-gray-100" />
             </a>
           </div>

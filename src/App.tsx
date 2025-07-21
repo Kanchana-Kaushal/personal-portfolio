@@ -3,11 +3,13 @@ import Footer from "./components/Footer";
 import Home from "./Pages/Home";
 import Projects from "./Pages/Projects";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   return (
     <BrowserRouter>
       <main className="font-inter mx-auto min-h-screen w-4/5 max-w-3xl text-gray-800">
+        <Toaster position="top-right" />
         <ScrollToTop />
         <Routes>
           <Route index element={<Home />} />
