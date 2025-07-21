@@ -6,7 +6,7 @@ import Projects from "./Pages/Projects";
 function App() {
   return (
     <BrowserRouter>
-      <main className="font-inter mx-auto w-4/5 max-w-3xl text-gray-800">
+      <main className="font-inter mx-auto min-h-screen w-4/5 max-w-3xl text-gray-800">
         <Routes>
           <Route index element={<Home />} />
           <Route path="projects" element={<Projects />} />
