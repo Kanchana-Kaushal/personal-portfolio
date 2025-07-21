@@ -4,7 +4,7 @@ type Work = {
   role: string;
   fromDate: string;
   toDate: string;
-  experience: [string];
+  experience: string[];
 };
 
 type Education = {
@@ -13,7 +13,7 @@ type Education = {
   courseName: string;
   fromDate: string;
   toDate: string;
-  experience: [string];
+  experience: string[];
 };
 
 type Project = {
@@ -39,80 +39,19 @@ export const workData: Work[] = [
       "Developed and maintained scalable web applications using TypeScript and React.",
     ],
   },
-  {
-    name: "Meta",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/2560px-Meta-Logo.png",
-    role: "Frontend Developer Intern",
-    fromDate: "May 2021",
-    toDate: "Jun 2022",
-    experience: [
-      "Assisted in building reusable UI components for internal dashboards.",
-    ],
-  },
-  {
-    name: "Google",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
-    role: "Software Engineer",
-    fromDate: "Aug 2022",
-    toDate: "Present",
-    experience: [
-      "Developed and maintained scalable web applications using TypeScript and React.",
-    ],
-  },
-  {
-    name: "Meta",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Meta-Logo.png/2560px-Meta-Logo.png",
-    role: "Frontend Developer Intern",
-    fromDate: "May 2021",
-    toDate: "Jun 2022",
-    experience: [
-      "Assisted in building reusable UI components for internal dashboards.",
-    ],
-  },
 ];
 
 export const educationData: Education[] = [
   {
-    name: "Harvard University",
+    name: "Pearson BTEC",
     imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/2104px-Harvard_University_coat_of_arms.svg.png",
-    courseName: "Master of Science in Computer Science",
-    fromDate: "Sep 2021",
-    toDate: "May 2023",
-    experience: ["Specialized in AI and scalable system architecture."],
-  },
-  {
-    name: "Stanford University",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/1200px-Seal_of_Leland_Stanford_Junior_University.svg.png",
-    courseName: "Bachelor of Science in Computer Science",
-    fromDate: "Sep 2017",
-    toDate: "Jun 2021",
+      "https://logosandtypes.com/wp-content/uploads/2020/07/Pearson.png",
+    courseName: "HND in Computing, Software Engineering",
+    fromDate: "Feb 2024",
+    toDate: "Present",
     experience: [
-      "Focused on software systems, machine learning, and human-computer interaction.",
-    ],
-  },
-  {
-    name: "Harvard University",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Harvard_University_coat_of_arms.svg/2104px-Harvard_University_coat_of_arms.svg.png",
-    courseName: "Master of Science in Computer Science",
-    fromDate: "Sep 2021",
-    toDate: "May 2023",
-    experience: ["Specialized in AI and scalable system architecture."],
-  },
-  {
-    name: "Stanford University",
-    imagePath:
-      "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Seal_of_Leland_Stanford_Junior_University.svg/1200px-Seal_of_Leland_Stanford_Junior_University.svg.png",
-    courseName: "Bachelor of Science in Computer Science",
-    fromDate: "Sep 2017",
-    toDate: "Jun 2021",
-    experience: [
-      "Focused on software systems, machine learning, and human-computer interaction.",
+      "Developed robust programming and software engineering skills, including designing, building, and testing applications across multiple platforms.",
+      "Gained practical experience , database management, OOP concepts and scalable system architecture for real-world problem-solving.",
     ],
   },
 ];
@@ -120,59 +59,89 @@ export const educationData: Education[] = [
 export const projectData: Project[] = [
   {
     image: "/cbc.png",
-    title: "CBC E-Commerce Site",
+    title: "Crystal Beauty Clear",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi debitis necessitatibus aut impedit praesentium ex voluptatem a architecto iusto sapiente in rem repellat tenetur quia, alias minima ad quaerat.",
+      "A beauty e-commerce platform with secure authentication, product management, orders, and reviews, featuring smart inventory and smooth UX",
     technologies: [
-      "reactJS",
-      "tailwindCSS",
-      "motion",
-      "axios",
-      "expressJS",
-      "nodeJS",
-      "mongoDB",
-      "REST API",
+      "ReactJS",
+      "TailwindCSS",
+      "NodeJS",
+      "ExpressJS",
+      "react-router-dom",
+      "Framer-Motion",
+      "MongoDB",
       "Supabase",
+      "JWT Auth",
+      "Argon2",
+      "Nodemailer",
     ],
     links: [
       {
         label: "Website",
-        url: "#",
+        url: "https://cbc-frontend-swart.vercel.app/",
       },
       {
         label: "Source",
-        url: "#",
+        url: "https://github.com/Kanchana-Kaushal/cbc-backend",
       },
       {
         label: "Source (UI)",
-        url: "#",
+        url: "https://github.com/Kanchana-Kaushal/cbc-frontend",
       },
     ],
   },
   {
-    image: "/cbc.png",
-    title: "CBC E-Commerce Site",
+    image: "/chef-claude.jpeg",
+    title: "Chef Claude",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi debitis necessitatibus aut impedit praesentium ex voluptatem a architecto iusto sapiente in rem repellat tenetur quia, alias minima ad quaerat.",
-    technologies: [
-      "reactJS",
-      "tailwindCSS",
-      "motion",
-      "axios",
-      "expressJS",
-      "nodeJS",
-      "mongoDB",
-      "REST API",
-      "Supabase",
-    ],
+      "An AI recipe generator that takes your ingredients and creates a simple, tasty recipe. Features a clean interface with smooth animations.",
+    technologies: ["ReactJS", "TailwindCSS", "GSAP", "OpenAI API"],
     links: [
       {
         label: "Website",
-        url: "#",
+        url: "https://chef-claude-sage-gamma.vercel.app/",
       },
       {
         label: "Source",
-        url: "#",
+        url: "https://github.com/Kanchana-Kaushal/chef-claude",
+      },
+    ],
+  },
+  {
+    image: "/portfolio_site.jpeg",
+    title: "Personal Portfolio",
+    description:
+      "A clean, responsive portfolio showcasing projects, skills, and experience. Features a dynamic project display, work and education timeline, and seamless navigation.",
+    technologies: ["ReactJS", "TypeScript", "TailwindCSS", "Framer Motion"],
+    links: [
+      {
+        label: "Website",
+        url: "https://chef-claude-sage-gamma.vercel.app/",
+      },
+      {
+        label: "Source",
+        url: "https://github.com/Kanchana-Kaushal/chef-claude",
+      },
+    ],
+  },
+  {
+    image: "/frontend-mentor.jpg",
+    title: "20+ Frontend Mentor Challenges",
+    description:
+      "Converted Figma designs into responsive, pixel-perfect UIs with attention to detail and clean code practices across real-world challenges.",
+    technologies: [
+      "ReactJS",
+      "TypeScript",
+      "TailwindCSS",
+      "Framer Motion",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
+    links: [
+      {
+        label: "Frontend Mentor Profile",
+        url: "https://www.frontendmentor.io/profile/Kanchana-Kaushal",
       },
     ],
   },

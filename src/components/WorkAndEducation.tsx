@@ -4,7 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 import { FaAngleUp } from "react-icons/fa";
 
 function WorkAndEducation() {
-  const [isWork, setIsWork] = useState<boolean>(true);
+  const [isWork, setIsWork] = useState<boolean>(false);
   const [isWorkExpanded, setIsWorkExpanded] = useState<boolean>(false);
   const [isEduExpanded, setIsEduExpanded] = useState<boolean>(false);
 
@@ -15,7 +15,7 @@ function WorkAndEducation() {
         <img
           src={work.imagePath}
           alt={`${work.name} logo`}
-          className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-center ring-1 ring-gray-300"
+          className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-cover object-center ring-1 ring-gray-300"
         />
 
         <p className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-500">
@@ -45,7 +45,7 @@ function WorkAndEducation() {
         <img
           src={edu.imagePath}
           alt={`${edu.name} logo`}
-          className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-center ring-1 ring-gray-300"
+          className="absolute top-5 -left-5 aspect-square w-10 rounded-full bg-white object-cover object-center ring-1 ring-gray-300"
         />
 
         <p className="mb-2 text-xs font-medium text-gray-500 dark:text-gray-500">
@@ -76,6 +76,7 @@ function WorkAndEducation() {
       <div className="flex items-center justify-between rounded-lg bg-gray-100 p-1 transition-all duration-200 dark:bg-gray-800">
         <button
           className={`w-full cursor-pointer rounded-md p-1 px-4 text-sm font-semibold ${isWork ? "bg-white text-black shadow-sm dark:bg-[#030712] dark:text-gray-50" : "text-gray-500 dark:text-gray-400"} cursor-pointer`}
+          disabled
           onClick={() => {
             setIsWork(true);
             setIsEduExpanded(false);

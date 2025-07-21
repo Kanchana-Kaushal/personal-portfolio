@@ -7,20 +7,28 @@ import { Link } from "react-router-dom";
 function Projects() {
   const myProjects = projectData.map((project, index) => (
     <div
-      className="space-y-2 rounded-xl p-4 shadow-sm ring-1 ring-gray-300 md:p-6 dark:ring-gray-700"
+      className="flex flex-col justify-between space-y-2 rounded-xl p-4 shadow-sm ring-1 ring-gray-300 md:p-6 dark:ring-gray-700"
       key={index}
     >
-      <img src={project.image} alt="snapshot of the project preview" />
-      <h3 className="mt-4 font-bold dark:text-gray-50">{project.title}</h3>
-      <p className="text-sm text-gray-500 dark:text-gray-400">
-        {project.description}
-      </p>
-      <div className="my-8 flex flex-wrap items-center gap-1.5">
-        {project.technologies.map((tech) => (
-          <div className="rounded-full bg-gray-200 p-1 px-2 text-[0.7rem] font-bold dark:bg-gray-800 dark:text-gray-300">
-            {tech}
-          </div>
-        ))}
+      <div className="space-y-2 overflow-hidden">
+        <a href={project.links[0].url} target="_blank">
+          <img
+            src={project.image}
+            alt="snapshot of a project overview"
+            className="transition duration-200 hover:scale-105"
+          />
+        </a>
+        <h3 className="mt-4 font-bold dark:text-gray-50">{project.title}</h3>
+        <p className="text-sm text-gray-500 dark:text-gray-400">
+          {project.description}
+        </p>
+        <div className="my-8 flex flex-wrap items-center gap-1.5">
+          {project.technologies.map((tech) => (
+            <div className="rounded-full bg-gray-200 p-1 px-2 text-[0.7rem] font-bold dark:bg-gray-800 dark:text-gray-300">
+              {tech}
+            </div>
+          ))}
+        </div>
       </div>
 
       <div className="flex flex-wrap items-center gap-2">
@@ -30,7 +38,8 @@ function Projects() {
               <>
                 <a
                   href={link.url}
-                  className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs font-medium text-gray-50 dark:bg-gray-50 dark:text-gray-950"
+                  className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs font-medium text-gray-50 dark:bg-gray-50 dark:text-gray-950 dark:hover:bg-gray-300"
+                  target="_blank"
                 >
                   <FiGithub />
                   {link.label}
@@ -43,7 +52,8 @@ function Projects() {
             <>
               <a
                 href={link.url}
-                className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs font-medium text-gray-50 dark:bg-gray-50 dark:text-gray-950"
+                className="flex items-center gap-1 rounded-md bg-gray-900 p-1 px-2 text-xs font-medium text-gray-50 dark:bg-gray-50 dark:text-gray-950 dark:hover:bg-gray-300"
+                target="_blank"
               >
                 <CiGlobe /> {link.label}
               </a>
