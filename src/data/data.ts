@@ -1,5 +1,3 @@
-import type { JSX } from "react";
-
 type Work = {
   name: string;
   imagePath: string;
@@ -16,6 +14,17 @@ type Education = {
   fromDate: string;
   toDate: string;
   experience: [string];
+};
+
+type Project = {
+  image: string;
+  title: string;
+  description: string;
+  technologies: string[];
+  links: {
+    label: string;
+    url: string;
+  }[];
 };
 
 export const workData: Work[] = [
@@ -62,6 +71,71 @@ export const educationData: Education[] = [
     toDate: "Jun 2021",
     experience: [
       "Focused on software systems, machine learning, and human-computer interaction.",
+    ],
+  },
+];
+
+export const projectData: Project[] = [
+  {
+    image: "/cbc.png",
+    title: "CBC E-Commerce Site",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi debitis necessitatibus aut impedit praesentium ex voluptatem a architecto iusto sapiente in rem repellat tenetur quia, alias minima ad quaerat.",
+    technologies: [
+      "reactJS",
+      "tailwindCSS",
+      "motion",
+      "axios",
+      "expressJS",
+      "nodeJS",
+      "mongoDB",
+      "REST API",
+      "Supabase",
+    ],
+    links: [
+      {
+        label: "Website",
+        url: "#",
+      },
+      {
+        label: "Source",
+        url: "#",
+      },
+      {
+        label: "Source (UI)",
+        url: "#",
+      },
+    ],
+  },
+  {
+    image: "/cbc.png",
+    title: "CBC E-Commerce Site",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam animi debitis necessitatibus aut impedit praesentium ex voluptatem a architecto iusto sapiente in rem repellat tenetur quia, alias minima ad quaerat.",
+    technologies: [
+      "reactJS",
+      "tailwindCSS",
+      "motion",
+      "axios",
+      "expressJS",
+      "nodeJS",
+      "mongoDB",
+      "REST API",
+      "Supabase",
+    ],
+    links: [
+      {
+        label: "Website",
+        url: "#",
+      },
+      {
+        label: "Source",
+        url: "#",
+      },
+      {
+        label: "Source (UI)",
+        url: "#",
+      },
     ],
   },
 ];
