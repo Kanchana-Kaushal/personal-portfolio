@@ -44,7 +44,7 @@ function Hero() {
 
         <div className="my-8 flex items-center gap-6">
           <a
-            href="/sample_resume.pdf"
+            href="/Resume.pdf"
             download="kanchanak-resume.pdf"
             onClick={() => {
               toast.success("Download Started!");
