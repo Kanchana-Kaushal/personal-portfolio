@@ -63,10 +63,10 @@ export const projectData: Project[] = [
     description:
       "A beauty e-commerce platform with secure authentication, product management, orders, and reviews, featuring smart inventory and smooth UX",
     technologies: [
-      "ReactJS",
+      "React.js",
       "TailwindCSS",
-      "NodeJS",
-      "ExpressJS",
+      "Node.js",
+      "Express.js",
       "react-router-dom",
       "Framer-Motion",
       "MongoDB",
@@ -74,6 +74,7 @@ export const projectData: Project[] = [
       "JWT Auth",
       "Argon2",
       "Nodemailer",
+      "OAuth2",
     ],
     links: [
       {
@@ -104,6 +105,39 @@ export const projectData: Project[] = [
       {
         label: "Source",
         url: "https://github.com/Kanchana-Kaushal/chef-claude",
+      },
+    ],
+  },
+  {
+    image: "/instaShare.png",
+    title: "instaShare",
+    description:
+      "Allows users to share files via QR codes or URLs sent to email. Metadata saved in MongoDB and fully encrypted for security. Users can set files to be instantly deleted after downloading or assigning a custom time-to-live (TTL). ",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "react-router-dom",
+      "MongoDB",
+      "mailJet",
+      "Supabase",
+      "Crypto",
+      "qrcode.react",
+    ],
+    links: [
+      {
+        label: "Website",
+        url: "https://instashare-frontend.vercel.app/",
+      },
+      {
+        label: "Source",
+        url: "https://github.com/Kanchana-Kaushal/instashare-backend",
+      },
+      {
+        label: "Source (UI)",
+        url: "https://github.com/Kanchana-Kaushal/instashare-frontend",
       },
     ],
   },
