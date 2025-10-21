@@ -7,6 +7,8 @@ import {
   FaGithub,
   FaGitAlt,
 } from "react-icons/fa";
+import { DiDotnet } from "react-icons/di";
+import { TbBrandCSharp } from "react-icons/tb";
 import {
   SiTailwindcss,
   SiTypescript,
@@ -25,31 +27,35 @@ type Technology = {
 
 function Technologies() {
   const technologyData: Technology[] = [
-    // Frontend Foundations
-    { name: "HTML5", icon: <FaHtml5 aria-hidden="true" /> },
-    { name: "CSS3", icon: <FaCss3Alt aria-hidden="true" /> },
+    // Core Programming Languages (High Value)
     { name: "JavaScript", icon: <FaJsSquare aria-hidden="true" /> },
     { name: "TypeScript", icon: <SiTypescript aria-hidden="true" /> },
+    { name: "C#", icon: <TbBrandCSharp aria-hidden="true" /> },
 
-    // Frontend Framework
+    // Frontend Framework (Essential)
     { name: "React", icon: <FaReact aria-hidden="true" /> },
 
-    // Styling & Animation
+    // Backend & Server (High Demand)
+    { name: "Node.js", icon: <FaNodeJs aria-hidden="true" /> },
+    { name: ".NET", icon: <DiDotnet aria-hidden="true" /> },
+    { name: "Express.js", icon: <SiExpress aria-hidden="true" /> },
+
+    // Databases (Critical Skills)
+    { name: "PostgreSQL", icon: <BiLogoPostgresql aria-hidden="true" /> },
+    { name: "MongoDB", icon: <SiMongodb aria-hidden="true" /> },
+    { name: "Supabase", icon: <SiSupabase aria-hidden="true" /> },
+
+    // Version Control (Essential)
+    { name: "Git", icon: <FaGitAlt aria-hidden="true" /> },
+    { name: "GitHub", icon: <FaGithub aria-hidden="true" /> },
+
+    // Styling & UI (Important)
     { name: "Tailwind CSS", icon: <SiTailwindcss aria-hidden="true" /> },
     { name: "Framer Motion", icon: <TbBrandFramerMotion aria-hidden="true" /> },
 
-    // Backend & Server
-    { name: "Node.js", icon: <FaNodeJs aria-hidden="true" /> },
-    { name: "Express.js", icon: <SiExpress aria-hidden="true" /> },
-
-    // Databases
-    { name: "MongoDB", icon: <SiMongodb aria-hidden="true" /> },
-    { name: "PostgreSQL", icon: <BiLogoPostgresql aria-hidden="true" /> },
-    { name: "Supabase", icon: <SiSupabase aria-hidden="true" /> },
-
-    // Version Control
-    { name: "Git", icon: <FaGitAlt aria-hidden="true" /> },
-    { name: "GitHub", icon: <FaGithub aria-hidden="true" /> },
+    // Frontend Foundations (Base Knowledge)
+    { name: "HTML5", icon: <FaHtml5 aria-hidden="true" /> },
+    { name: "CSS3", icon: <FaCss3Alt aria-hidden="true" /> },
   ];
 
   return (

@@ -57,6 +57,65 @@ export const educationData: Education[] = [
 ];
 
 export const projectData: Project[] = [
+  //stock platform
+  {
+    image: "/Stock-Platform.png",
+    title: "Stock Social Platform",
+    description:
+      " A .NET Core Web API for managing stock portfolios and comments, with automatic fetching missing stock data from the FMP API.",
+    technologies: [
+      ".Net Core",
+      "FMP API",
+      "C#",
+      "PostgreSQL",
+      "npgsql",
+      "JWT",
+      "Newtonsoft",
+    ],
+    links: [
+      {
+        label: "Source",
+        url: "https://github.com/Kanchana-Kaushal/Stock-Social-Platform",
+      },
+    ],
+  },
+
+  //Instashare
+  {
+    image: "/instaShare.png",
+    title: "instaShare",
+    description:
+      "Allows users to share files via QR codes or URLs sent to email. Metadata saved in MongoDB and fully encrypted for security. Users can set files to be instantly deleted after downloading or assigning a custom time-to-live (TTL). ",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Node.js",
+      "Express.js",
+      "react-router-dom",
+      "MongoDB",
+      "mailJet",
+      "Supabase",
+      "Crypto",
+      "qrcode.react",
+    ],
+    links: [
+      {
+        label: "Website",
+        url: "https://instashare-frontend.vercel.app/",
+      },
+      {
+        label: "Source",
+        url: "https://github.com/Kanchana-Kaushal/instashare-backend",
+      },
+      {
+        label: "Source (UI)",
+        url: "https://github.com/Kanchana-Kaushal/instashare-frontend",
+      },
+    ],
+  },
+
+  //cbc
   {
     image: "/cbc.png",
     title: "Crystal Beauty Clear",
@@ -91,6 +150,8 @@ export const projectData: Project[] = [
       },
     ],
   },
+
+  //cheff claude
   {
     image: "/chef-claude.jpeg",
     title: "Chef Claude",
@@ -108,39 +169,8 @@ export const projectData: Project[] = [
       },
     ],
   },
-  {
-    image: "/instaShare.png",
-    title: "instaShare",
-    description:
-      "Allows users to share files via QR codes or URLs sent to email. Metadata saved in MongoDB and fully encrypted for security. Users can set files to be instantly deleted after downloading or assigning a custom time-to-live (TTL). ",
-    technologies: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Node.js",
-      "Express.js",
-      "react-router-dom",
-      "MongoDB",
-      "mailJet",
-      "Supabase",
-      "Crypto",
-      "qrcode.react",
-    ],
-    links: [
-      {
-        label: "Website",
-        url: "https://instashare-frontend.vercel.app/",
-      },
-      {
-        label: "Source",
-        url: "https://github.com/Kanchana-Kaushal/instashare-backend",
-      },
-      {
-        label: "Source (UI)",
-        url: "https://github.com/Kanchana-Kaushal/instashare-frontend",
-      },
-    ],
-  },
+
+  //Portfolio
   {
     image: "/portfolio_site.jpeg",
     title: "Personal Portfolio",
@@ -158,6 +188,8 @@ export const projectData: Project[] = [
       },
     ],
   },
+
+  //Fronend mentor
   {
     image: "/frontend-mentor.jpg",
     title: "20+ Frontend Mentor Challenges",
