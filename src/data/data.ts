@@ -48,7 +48,7 @@ export const educationData: Education[] = [
       "https://logosandtypes.com/wp-content/uploads/2020/07/Pearson.png",
     courseName: "HND in Computing, Software Engineering",
     fromDate: "Feb 2024",
-    toDate: "Present",
+    toDate: "Aug 2025",
     experience: [
       "Developed robust programming and software engineering skills, including designing, building, and testing applications across multiple platforms.",
       "Gained practical experience , database management, OOP concepts and scalable system architecture for real-world problem-solving.",
